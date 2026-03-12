@@ -1,0 +1,14 @@
+{
+  "name": "mini-lodash",
+  "version": "1.0.0",
+  "description": "Mini lodash library",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Sapna Nagwanshi",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.0.18"
+  }
+}
