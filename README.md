@@ -34,3 +34,9 @@ Splits array into chunks.
 
 chunk([1,2,3,4],2)
 // [[1,2],[3,4]]
+
+<!-- ## Things I Learned
+
+- Handling nested arrays efficiently
+- Implementing debounce using closures
+- Writing generic TypeScript utilities -->
