@@ -2,13 +2,18 @@
   "name": "mini-lodash",
   "version": "1.0.0",
   "description": "Mini lodash library",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "vitest"
+    "build": "tsc",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "author": "Sapna Nagwanshi",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   }
 }
