@@ -1,42 +1,53 @@
-# JS Utility Library
+# JavaScript Utility Library (Lodash Clone)
 
-A small lodash-like library built to master JavaScript.
+This project is part of my effort to deepen my understanding of JavaScript and TypeScript by re-implementing commonly used utility functions similar to Lodash.
 
-## Goals
+## Why I am building this
 
-- Strengthen JavaScript fundamentals
-- Practice TypeScript generics
-- Understand how utility libraries are designed
-- Explore edge cases and test-driven development
+As a frontend engineer, I want to strengthen my understanding of:
 
-## Implemented Utilities
+- JavaScript fundamentals
+- Functional utilities
+- TypeScript generics
+- Writing reusable library code
+- Handling edge cases and testing
 
-Array
+Instead of just using libraries, I am rebuilding them to understand the underlying implementation.
+
+## Current Focus
+
+Currently implementing utilities for:
+
+Array utilities
 
 - chunk
-<!-- - flatten
+- flatten
 - unique
 
-Object
-
-- get
-
-Function
+Function utilities
 
 - debounce
-- throttle -->
+- throttle
+- memoize
 
-## Functions
+Object utilities
 
-### chunk
+- get
+- deepClone
 
-Splits array into chunks.
+## Tech Stack
 
-chunk([1,2,3,4],2)
+- TypeScript
+- Vitest for testing
+- Node.js
+
+## Example
+
+```ts
+chunk([1, 2, 3, 4], 2);
 // [[1,2],[3,4]]
+```
 
-<!-- ## Things I Learned
+## Goal
 
-- Handling nested arrays efficiently
-- Implementing debounce using closures
-- Writing generic TypeScript utilities -->
+To better understand how utility libraries like Lodash are designed and implemented while improving my JavaScript problem-solving skills.
