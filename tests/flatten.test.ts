@@ -23,4 +23,11 @@ describe("flatten", () => {
   it("handles nested empty arrays", () => {
     expect(flatten([1, [], 2])).toEqual([1, 2]);
   });
+
+  it("does not mutate the original array", () => {
+    const arr = [1, [2, 3]];
+    flatten(arr);
+
+    expect(arr).toEqual([1, [2, 3]]);
+  });
 });
