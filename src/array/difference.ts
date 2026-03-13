@@ -7,6 +7,11 @@
 // Time complexity O(n*m)
 //filter loops through arr1 → O(n)
 // includes loops through arr2 → O(m)
+// export function difference<T>(arr1: T[], arr2: T[]): T[] {
+//   return arr1.filter((item) => !arr2.includes(item));
+// }
+
 export function difference<T>(arr1: T[], arr2: T[]): T[] {
-  return arr1.filter((item) => !arr2.includes(item));
+  const set = new Set(arr2);
+  return arr1.filter((item) => !set.has(item));
 }
