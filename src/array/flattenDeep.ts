@@ -13,7 +13,7 @@ export function flattenDeep<T>(arr: (T | T[])[]): T[] {
     }
   }
 
-  flatten(arr, ans);
+  flatten(arr);
 
   return ans;
 }
