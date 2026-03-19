@@ -1,0 +1,14 @@
+export function memoize<T extends (...args: any[]) => any>(func: T) {
+  const cache = new Map<string, ReturnType<T>>();
+
+  return function (this: any, ...args: Parameters<T>): ReturnType<T> {
+    const key = JSON.stringify(args);
+
+    if (cache.has(key)) {
+      return cache.get(key)!;
+    }
+    const result = func.call(this, ...args);
+    cache.set(key, result);
+    return result;
+  };
+}
