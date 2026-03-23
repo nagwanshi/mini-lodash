@@ -25,7 +25,7 @@ type AnyFunction = (...args: any[]) => any;
 
 export function memoize<T extends AnyFunction>(
   func: T,
-  resolver: (...args: Parameters<T>) => string,
+  resolver?: (...args: Parameters<T>) => string,
 ) {
   const cache = new (memoize.Cache as MapConstructor)<string, ReturnType<T>>();
   // const cache = new Map<string, ReturnType<T>>();
