@@ -125,19 +125,19 @@ const config: Config = {
             },
           ],
         },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/nagwanshi/mini-lodash",
-            },
-          ],
-        },
+        // {
+        //   title: "More",
+        //   items: [
+        //     {
+        //       label: "Blog",
+        //       to: "/blog",
+        //     },
+        //     {
+        //       label: "GitHub",
+        //       href: "https://github.com/nagwanshi/mini-lodash",
+        //     },
+        //   ],
+        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
